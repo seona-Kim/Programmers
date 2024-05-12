@@ -1,8 +1,7 @@
 class Solution {
     public int solution(String s) {
         
-        String strNum = new String(s);
-        int num = Integer.parseInt(strNum);
+        int num = Integer.parseInt(s);
         
         return num;
     }
