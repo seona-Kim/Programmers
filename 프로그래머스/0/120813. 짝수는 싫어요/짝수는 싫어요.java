@@ -1,9 +1,13 @@
+import java.util.ArrayList;
+
 class Solution {
-    public int[] solution(int n) {
-        int size = n / 2 + n % 2;
-        int[] answer = new int[size];
-        for (int i = 0; i < size; i++) {
-            answer[i] = i * 2 + 1;
+    public ArrayList solution(int n) {
+        ArrayList<Integer> answer = new ArrayList<Integer>();
+        
+        for(int i = 0; i <= n; i++) {
+            if(i % 2 != 0) {
+                answer.add(i);
+            }
         }
         return answer;
     }
